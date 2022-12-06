@@ -221,11 +221,6 @@
   font-family: "Lato-Regular-400";
 }
 
-body {
-  min-height: 100vh;
-  max-width: 1440px;
-}
-
 a {
   text-decoration: none;
 }
