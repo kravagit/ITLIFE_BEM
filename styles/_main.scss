@@ -1,8 +1,6 @@
 .main {
     padding: 150px 135px;
-    background-color:#F6F6F6;
     
-
     &__title {
         position: relative;
         text-align: center;
@@ -39,12 +37,10 @@
 .cardWraper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
-    // grid-template-columns: repeat(4, minmax(270px,1fr));
     gap:30px;
     margin-top: 60px;
 }
 .card {
-
 		&__description {
             font-size: 18px;
             line-height: 22px;
@@ -70,12 +66,9 @@
             transform: translateY(0);
         }
     }
-   
-   
     &__switch{
         position: relative;
         overflow: hidden;
-        
     }
 
     &__visible {
@@ -87,6 +80,9 @@
     }
 
     &__visible-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     &__withoutImg {
@@ -104,7 +100,6 @@
         &:hover{
             transform: translateY(0);
         }
-        
     }
 
     &__withoutImg-social{

@@ -4,7 +4,6 @@
     align-items: center;
     padding:40px 0;
 
-
     &__social {
         display: flex;
         justify-content: center;
@@ -14,7 +13,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // position: relative;
         width: 42px;
         height: 42px;
         border: 1px solid #18B5DC;
@@ -29,10 +27,5 @@
         &:hover .footer__social-icon{
             fill: #fff;
         }
-    }
-
-    &__social-icon {
-        
-        
     }
 }
