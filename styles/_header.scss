@@ -1,0 +1,42 @@
+.header {
+    display:grid;
+    grid-template-columns: 170px 1fr 170px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+
+    &__button-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        
+    }
+}
+
+
+
+.button {
+    font-family: "Lato-Bold-700" ;
+    padding: 10px 20px;
+    border: 1px solid #3C3C3C;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 22px;
+    &:active{
+        box-shadow: inset -16px 18px 14px -18px rgba(0,0,0,0.75);
+    }   
+    &:hover{
+        background-color: #18B5DC;
+        border: 1px solid #18B5DC ;
+        color: #fff;
+}     
+}
+
+.logo{
+    padding: 10px 0;
+}
+.logoImg{
+}
+
+

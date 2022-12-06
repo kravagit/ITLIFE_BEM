@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:40px 0;
+
+
+    &__social {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social-iconBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // position: relative;
+        width: 42px;
+        height: 42px;
+        border: 1px solid #18B5DC;
+        cursor: pointer;
+
+        & + &{
+            margin-left: 10px;
+        }
+        &:hover {
+            background-color: #18B5DC;
+        }
+        &:hover .footer__social-icon{
+            fill: #fff;
+        }
+    }
+
+    &__social-icon {
+        
+        
+    }
+}

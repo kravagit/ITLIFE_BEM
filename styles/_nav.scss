@@ -1,0 +1,39 @@
+.nav {
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        &_small-font{
+            padding: 28px 0;
+            text-transform: uppercase;
+            color: #3C3C3C;
+            font-size: 18px;
+            line-height: 22px;
+            &:hover{
+                color: #18B5DC;
+            }
+        }
+    }
+
+    &__list-item {
+        list-style: none;
+        & + &{
+            padding-left: 30px;
+        }
+        
+        
+    }
+    &__list-link{
+        text-decoration: none;
+        color: #3C3C3C;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 28px 0;
+        
+        &:hover{
+            color: #18B5DC;
+        }
+    }
+}

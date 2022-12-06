@@ -1,0 +1,126 @@
+.main {
+    padding: 150px 135px;
+    background-color:#F6F6F6;
+    
+
+    &__title {
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 34px;
+        line-height: 41px;
+        letter-spacing: 0.13em;
+        color: #3C3C3C;
+        padding-bottom: 20px;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 45px;
+            height: 4px;
+            background-color: #DDDBDB;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subTitle {
+        font-family: "Lato-Thin-300";
+        text-align: center;
+        max-width: 570px;
+        margin: auto;
+        color: #3C3C3C;
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 40px;
+    }
+}
+
+.cardWraper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+    // grid-template-columns: repeat(4, minmax(270px,1fr));
+    gap:30px;
+    margin-top: 60px;
+}
+.card {
+
+		&__description {
+            font-size: 18px;
+            line-height: 22px;
+            padding-top: 20px;
+            color:#3C3C3C;
+		}
+
+		&__description-title {
+            font-size: 18px;
+            line-height: 22px;
+            font-family: "Lato-Bold-700";
+		}
+
+		&__description-subTitle {
+            font-family: "Lato-Thin-300";
+		}
+}
+
+.card {
+    &:nth-child(even) .card__withoutImg{
+        transform: translateY(100%);
+        &:hover{
+            transform: translateY(0);
+        }
+    }
+   
+   
+    &__switch{
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    &__visible {
+        display: block;
+        
+        &:hover +.card__withoutImg{
+            transform: translateY(0);
+        }
+    }
+
+    &__visible-img {
+    }
+
+    &__withoutImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(24, 181, 220, .5);
+        transform: translateY(-100%);
+        transition: transform .5s ease-in-out;
+        &:hover{
+            transform: translateY(0);
+        }
+        
+    }
+
+    &__withoutImg-social{
+    }
+
+    &__withoutImg-social-iconBox{
+        display: inline-grid;
+        place-items: center;
+        width: 42px;
+        aspect-ratio: 1 / 1;
+        background-color: #5DCBE6;
+        &:hover .card__withoutImg-social-icon{
+            fill:#18B5DC ;
+        }
+        &:hover{
+            background-color: #fff;
+        }
+    }
+}
